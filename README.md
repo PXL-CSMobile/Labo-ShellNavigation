@@ -12,9 +12,11 @@ De applicatie bestaat momenteel uit allemaal aparte pagina’s, namelijk:
 *(EXTRA: je kan in de SunriseService zien hoe een HTTP call wordt gemaakt)*
 
 Implementeer een logische navigatiestructuur m.b.v. de Flyout navigatie. Voorzie ook een Header en icoontjes bij de Flyout Items. 
-Icoontjes zijn beschikbaar in de map `\Resources\Images`.
+Icoontjes zijn beschikbaar in de map `\Resources\Images`. Het hamburgermenu moet ook vervangen worden door een ander icoontje.
 
 Voorbeeld van een mogelijke Flyout navigatiestructuur:
+
+![<img src="assets/ex1_2.png" width="250"/>](assets/ex1_2.png) 
 
 ![<img src="assets/ex1_1.png" width="250"/>](assets/ex1_1.png)
 
@@ -25,6 +27,7 @@ Voorbeeld van een mogelijke Flyout navigatiestructuur:
 Vorm de ‘Moon Phase’ en ‘Sunrise’ Flyout items om naar een Tab navigatie die opgeroepen kan worden via een nieuw Flyout Item ‘Astronomy’
 
 ![<img src="assets/ex2_1.png" width="250"/>](assets/ex2_1.png)
+
 ![<img src="assets/ex2_2.png" width="250"/>](assets/ex2_2.png)
 
 
@@ -41,4 +44,10 @@ Implementeer de logica achter de knoppen van de hemellichamen en toon de juiste 
 Screenshots:
 
 ![<img src="assets/ex3_1.png" width="250"/>](assets/ex3_1.png)
+
 ![<img src="assets/ex3_2.png" width="250"/>](assets/ex3_2.png)
+
+## Extra: 
+* Zoek uit hoe je het flyout menu kan openen door op een Button op een pagina te klikken.
+* Verander de *backdrop* van het Flyoutmenu en bestudeer het effect.
+* Voeg een knop toe op de about page om naar de AstronomicalBodiesPage te navigeren (**niet stacked!**).
