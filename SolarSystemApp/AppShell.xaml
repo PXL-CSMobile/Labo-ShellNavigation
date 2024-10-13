@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+	x:Class="SolarSystemApp.AppShell"
+	xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:pages="clr-namespace:SolarSystemApp.Pages"
+	xmlns:local="clr-namespace:SolarSystemApp"
+    FlyoutIcon="moon_w.png">
+
+    <Shell.FlyoutHeader>
+        <Grid HeightRequest="100" BackgroundColor="{StaticResource OffBlack}">
+            <Image Source="moon_w.png" />
+        </Grid>
+    </Shell.FlyoutHeader>
+
+    <!--<Shell.ItemTemplate>
+        <DataTemplate>
+            <Grid ColumnDefinitions="0.2*,0.8*">
+                <VisualStateManager.VisualStateGroups>
+                    <VisualStateGroupList>
+                        <VisualStateGroup x:Name="CommonStates">
+                            <VisualState x:Name="Normal">
+                                <VisualState.Setters>
+                                    <Setter Property="BackgroundColor"
+                         Value="Transparent" />
+                                </VisualState.Setters>
+                            </VisualState>
+                            <VisualState x:Name="Selected">
+                                <VisualState.Setters>
+                                    <Setter Property="BackgroundColor"
+                         Value="Gray" />
+                                </VisualState.Setters>
+                            </VisualState>
+                        </VisualStateGroup>
+                    </VisualStateGroupList>
+                </VisualStateManager.VisualStateGroups>
+                <Image Source="{Binding FlyoutIcon}"
+                       Margin="5"
+                       HeightRequest="45"  />
+                <Label Grid.Column="1"
+                       Text="{Binding Title}"
+                       FontAttributes="Italic"
+                       VerticalTextAlignment="Center" />
+            </Grid>
+        </DataTemplate>
+    </Shell.ItemTemplate>-->
+
+    <FlyoutItem Title="Astronomy" Icon="moon_b.png">
+        <ShellContent Title="Moon Phase" Icon="moon_b.png"
+            ContentTemplate="{DataTemplate pages:MoonPhasePage}"/>
+
+        <ShellContent Title="Sunrise" Icon="sun.png"
+            ContentTemplate="{DataTemplate pages:SunrisePage}"/>
+
+        <ShellContent Title="Bodies" Icon="comet_b.png"
+            ContentTemplate="{DataTemplate pages:AstronomicalBodiesPage}"
+            Route="AstronomicalBodiesPage"/>
+    </FlyoutItem>
+
+    <FlyoutItem Title="About" Icon="question.png">
+        <ShellContent
+            ContentTemplate="{DataTemplate pages:AboutPage}"/>
+    </FlyoutItem>
+
+</Shell>
