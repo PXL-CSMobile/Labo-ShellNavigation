@@ -48,7 +48,7 @@ Screenshots:
 ![<img src="assets/ex3_2.png" width="250"/>](assets/ex3_2.png)
 
 ## Extra:
-* In de laatste screenshot zie je dat de *back-button* geen pijltje naar links is, maar een icoontje van een komeet. Zoek uit hoe je dit kan doen.  
+* In de laatste screenshot zie je dat de *back-button* geen pijltje naar links is, maar een icoontje van een komeet. Zoek uit hoe je dit kan doen.  [Momenteel is in MAUI een bug die dit voorkomt] 
 * Zoek uit hoe je het flyout menu kan openen vanuit een *.xaml.cs* file (dus in C# code) nadat je bijvoorbeeld op een `Button` geklikt hebt.
 * Verander de *backdrop* van het Flyoutmenu en bestudeer het effect.
 * Voeg een knop toe op de `AboutPage` om naar de `AstronomicalBodiesPage` te navigeren (**niet stacked!**).
